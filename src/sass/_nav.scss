@@ -1,0 +1,33 @@
+.nav{
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-top: solid 1px #EFEFEF;
+    &__wrap{
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 10px auto 40px; 
+        &__list{
+            &__link{
+                width: 20vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color: #C3BABA;
+                font-size: 1rem;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 10px;
+                &__img{
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}

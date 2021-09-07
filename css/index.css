@@ -10,12 +10,37 @@
 }
 
 .startUp__Img {
+  text-align: center;
+  line-height: 260px;
   height: 260px;
   width: 300px;
   background-color: gray;
 }
 
+.startUp__Terms {
+  text-align: center;
+}
+
+.startUp__Terms p {
+  font-size: 14px;
+  color: #252a34;
+}
+
+.startUp__Terms p a {
+  color: #252a34;
+  list-style: none;
+  border-bottom: #707070;
+}
+
 .startUp__Btn {
+  text-align: center;
+}
+
+.startUp__Btn button {
   height: 55px;
   width: 320px;
+  border-radius: 28px;
+  border: none;
+  background-color: #ff5a84;
+  color: #fff;
 }

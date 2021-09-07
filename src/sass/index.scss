@@ -1,3 +1,6 @@
+$btnColor: #ff5a84;
+$textColor: #252a34;
+
 .startUp {
   height: 80vh;
   &__Wrap {
@@ -7,12 +10,35 @@
     align-items: center;
   }
   &__Img {
+    text-align: center;
+    line-height: 260px;
     height: 260px;
     width: 300px;
     background-color: gray;
   }
+
+  &__Terms {
+    text-align: center;
+    p {
+      font-size: 14px;
+      color: $textColor;
+      a {
+        color: $textColor;
+        list-style: none;
+        border-bottom: #707070;
+      }
+    }
+  }
+
   &__Btn {
-    height: 55px;
-    width: 320px;
+    text-align: center;
+    button {
+      height: 55px;
+      width: 320px;
+      border-radius: 28px;
+      border: none;
+      background-color: $btnColor;
+      color: #fff;
+    }
   }
 }
