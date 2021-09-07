@@ -1,0 +1,18 @@
+.startUp {
+  height: 80vh;
+  &__Wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__Img {
+    height: 260px;
+    width: 300px;
+    background-color: gray;
+  }
+  &__Btn {
+    height: 55px;
+    width: 320px;
+  }
+}

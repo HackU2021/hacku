@@ -41,16 +41,10 @@ task('sass',(done)=>{
             compass : true
             }).on('error',sass.logError))
         .pipe(sourcemaps.write())
-<<<<<<< HEAD
         .pipe(autoprefixer())
         .pipe(dest(cssDestPath));
     done();
     console.log("===== sass is true =====")
-=======
-        .pipe(autoprefixer())//{browsers: ["last 3 versions", "ie >= 11", "Android >= 4","ios_saf >= 10"]}  ()内に入っていた物
-        .pipe(dest(cssDestPath));
-    done();
->>>>>>> 93ff1662336e9038457f0b13c5293a1b80f98aa7
     
 });
 
