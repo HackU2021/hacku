@@ -1,0 +1,65 @@
+@import "var";
+@import "ress";
+.tag {
+  &__search {
+    p {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  &__inputText {
+    position: relative;
+    margin: 0 auto;
+    width: min-content;
+
+    input {
+      padding-left: 30px;
+      width: 300px;
+      height: 40px;
+      background-color: #f2eded;
+      border: none;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    i {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #707070;
+    }
+  }
+
+  &__genre {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      height: 40px;
+      width: 100px;
+      border-radius: 20px;
+      background-color: #f2eded;
+      font-size: 12px;
+      margin: 8px;
+
+      &--selected {
+        background-color: $mainColor;
+      }
+    }
+    &__See {
+      display: flex;
+      p {
+        text-align: center;
+      }
+      i {
+        color: #4ecdc4;
+        border: solid red;
+        height: 10px;
+      }
+    }
+  }
+}

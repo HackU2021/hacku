@@ -8,7 +8,8 @@
    # Global selectors
    # ================================================================= */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: scroll;
   /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%;
@@ -18,7 +19,8 @@ html {
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 ::before,
@@ -399,15 +401,21 @@ video {
   position: absolute;
   left: 5px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 20px;
   color: #707070;
 }
 
 .tag__genre__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tag__genre__item {
@@ -424,6 +432,8 @@ video {
 }
 
 .tag__genre__See {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -436,3 +446,4 @@ video {
   border: solid red;
   height: 10px;
 }
+/*# sourceMappingURL=tag.css.map */
