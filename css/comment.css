@@ -372,99 +372,43 @@ video {
   text-shadow: none;
 }
 
-.tag {
-  margin-top: 35px;
-  padding-bottom: 130px;
+.comment {
+  text-align: center;
+  padding-top: 35px;
 }
 
-.tag__search p {
-  color: #556270;
+.comment p {
   text-align: center;
   font-size: 16px;
-  margin: 16px;
+  color: #556270;
+  margin-bottom: 40px;
 }
 
-.tag__inputText {
-  position: relative;
-  margin: 0 auto;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+.comment .textWrap {
+  display: flex;
+  justify-content: center;
 }
 
-.tag__inputText input {
-  padding-left: 42px;
+.comment .text {
+  height: 230px;
   width: 300px;
-  height: 40px;
-  background-color: #f2eded;
-  border: none;
-  border-radius: 20px;
+  background-color: tomato;
+  border-radius: 10px;
+}
+
+.comment a {
+  display: block;
+  color: #556270;
   font-size: 12px;
+  text-decoration: none;
+  margin: 40px;
 }
 
-.tag__inputText i {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: #707070;
-}
-
-.tag__genre {
-  margin-top: 26px;
-}
-
-.tag__genre__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.tag__genre p {
-  margin: 23px;
-}
-
-.tag__genre__item {
-  height: 40px;
-  width: 100px;
-  border-radius: 20px;
-  background-color: #f2eded;
-  color: #707070;
-  font-size: 12px;
-  margin: 8px;
-}
-
-.tag__genre__item--selected {
-  background-color: #4ecdc4;
-  color: #fff;
-}
-
-.tag__genre__See {
-  display: flex;
-  justify-content: center;
-}
-
-.tag__genre__See p {
-  text-align: center;
-}
-
-.tag__genre__See i {
-  color: #4ecdc4;
-  margin: 5px;
-}
-
-.linkBtn {
-  display: flex;
-  justify-content: center;
-}
-
-.linkBtn button {
-  position: fixed;
-  bottom: 33px;
+.comment .linkBtn {
   height: 55px;
   width: 320px;
-  background-color: #ffd136;
   border-radius: 28px;
+  background-color: #ffd136;
+  font-size: 16px;
   color: #fff;
 }
