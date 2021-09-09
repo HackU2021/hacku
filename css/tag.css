@@ -372,9 +372,15 @@ video {
   text-shadow: none;
 }
 
+.tag {
+  margin-top: 35px;
+  padding-bottom: 130px;
+}
+
 .tag__search p {
   text-align: center;
   font-size: 16px;
+  margin: 16px;
 }
 
 .tag__inputText {
@@ -386,7 +392,7 @@ video {
 }
 
 .tag__inputText input {
-  padding-left: 30px;
+  padding-left: 42px;
   width: 300px;
   height: 40px;
   background-color: #f2eded;
@@ -397,11 +403,15 @@ video {
 
 .tag__inputText i {
   position: absolute;
-  left: 5px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #707070;
+}
+
+.tag__genre {
+  margin-top: 26px;
 }
 
 .tag__genre__items {
@@ -410,21 +420,28 @@ video {
   justify-content: center;
 }
 
+.tag__genre p {
+  margin: 23px;
+}
+
 .tag__genre__item {
   height: 40px;
   width: 100px;
   border-radius: 20px;
   background-color: #f2eded;
+  color: #707070;
   font-size: 12px;
   margin: 8px;
 }
 
 .tag__genre__item--selected {
   background-color: #4ecdc4;
+  color: #fff;
 }
 
 .tag__genre__See {
   display: flex;
+  justify-content: center;
 }
 
 .tag__genre__See p {
@@ -433,6 +450,20 @@ video {
 
 .tag__genre__See i {
   color: #4ecdc4;
-  border: solid red;
-  height: 10px;
+  margin: 5px;
+}
+
+.linkBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.linkBtn button {
+  position: fixed;
+  bottom: 33px;
+  height: 55px;
+  width: 320px;
+  background-color: #ffd136;
+  border-radius: 28px;
+  color: #fff;
 }

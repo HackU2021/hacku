@@ -1,10 +1,13 @@
 @import "var";
 @import "ress";
 .tag {
+  margin-top: 35px;
+  padding-bottom: 130px;
   &__search {
     p {
       text-align: center;
       font-size: 16px;
+      margin: 16px;
     }
   }
   &__inputText {
@@ -13,7 +16,7 @@
     width: min-content;
 
     input {
-      padding-left: 30px;
+      padding-left: 42px;
       width: 300px;
       height: 40px;
       background-color: #f2eded;
@@ -24,7 +27,7 @@
 
     i {
       position: absolute;
-      left: 5px;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
@@ -33,33 +36,57 @@
   }
 
   &__genre {
+    margin-top: 26px;
     &__items {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    p {
+      margin: 23px;
+    }
+
     &__item {
       height: 40px;
       width: 100px;
       border-radius: 20px;
       background-color: #f2eded;
+      color: #707070;
       font-size: 12px;
       margin: 8px;
 
       &--selected {
         background-color: $mainColor;
+        color: #fff;
       }
     }
     &__See {
       display: flex;
+      justify-content: center;
+
       p {
         text-align: center;
       }
       i {
         color: #4ecdc4;
-        border: solid red;
-        height: 10px;
+
+        margin: 5px;
       }
     }
+  }
+}
+
+.linkBtn {
+  display: flex;
+  justify-content: center;
+  button {
+    position: fixed;
+    bottom: 33px;
+    height: 55px;
+    width: 320px;
+    background-color: $accentColor;
+    border-radius: 28px;
+    color: #fff;
   }
 }
