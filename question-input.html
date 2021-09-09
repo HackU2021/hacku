@@ -18,33 +18,35 @@
     </div>
 </header>
 <main class="input">
-    <div class="input__wrap">
-        <div class="input__wrap__profile">
-            <img src="img/human.png" alt="プロフィール写真">
+    <form action="#" method="post">
+        <div class="input__wrap">
+            <div class="input__wrap__profile">
+                <img src="img/human.png" alt="プロフィール写真" class="input__wrap__profile">
+            </div>
+            <h2 class="input__wrap__question-heading">田中凌生さんに送る質問を入力してください。</h2>
+            <div class="input__wrap__question">
+                <section class="input__wrap__question__area">
+                    <div class="input__wrap__question__area__number">Q1</div>
+                    <div class="input__wrap__question__area__content">
+                        <textarea name="question" id="" cols="30" rows="10" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text"></textarea>
+                    </div>
+                </section>
+                <section class="input__wrap__question__area">
+                    <div class="input__wrap__question__area__number">Q2</div>
+                    <div class="input__wrap__question__area__content">
+                        <textarea name="question" id="" cols="30" rows="10" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text"></textarea>
+                    </div>
+                </section>
+                <section class="input__wrap__question__area">
+                    <div class="input__wrap__question__area__number">Q3</div>
+                    <div class="input__wrap__question__area__content">
+                        <textarea name="question" id="" cols="30" rows="10" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text"></textarea>
+                    </div>
+                </section>
+            </div>
         </div>
-        <h2 class="input__wrap__question-heading">田中凌生さんに送る質問を入力してください。</h2>
-        <form action="#" method="post" class="input__wrap__question">
-            <section class="input___wrap__question__area">
-                <div class="input__wrap__question__area__number">Q1</div>
-                <div class="input__wrap__question__area__content">
-                    <input type="text" name="question" id="question" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text">
-                </div>
-            </section>
-            <section>
-                <div class="input__wrap__question__area__number">Q2</div>
-                <div class="input__wrap__question__area__content">
-                    <input type="text" name="question" id="question" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text">
-                </div>
-            </section>
-            <section>
-                <div class="input__wrap__question__area__number">Q3</div>
-                <div class="input__wrap__question__area__content">
-                    <input type="text" name="question" id="question" placeholder="ex.鬼滅の刃の何のキャラが好きですか？" class="input__wrap__question__area__content__text">
-                </div>
-            </section>
-            <button type="submit">質問を送信する</button>
-        </from>
-    </div>
+        <button type="submit" class="input__submit">質問を送信する</button>
+    </from>
 </main>
 <nav class="nav">
     <ul class="nav__wrap">

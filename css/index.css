@@ -382,19 +382,21 @@ body {
 
 .nav {
   width: 100vw;
+  height: 85px;
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1000;
   border-top: solid 1px #EFEFEF;
+  background-color: #fff;
 }
 
 .nav__wrap {
   width: 80vw;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   margin: 10px auto 40px;
 }
@@ -408,7 +410,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .nav__wrap__list__link__img {
@@ -434,11 +436,13 @@ body {
 }
 
 .header__wrap__link__icon {
+  color: #55626F;
   font-size: 1.6rem;
 }
 
 .header__wrap__heading {
-  width: 85%;
+  width: 83%;
+  color: #556270;
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
