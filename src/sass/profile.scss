@@ -1,0 +1,116 @@
+@import "var";
+@import "ress";
+
+body {
+  background-color: $mainColor;
+}
+
+.profile {
+  margin-top: 35px;
+
+  &__Box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__Wrap {
+    height: 520px;
+    width: 364px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &__Img {
+      text-align: center;
+      margin-top: 24px;
+    }
+    &__Name {
+      font-size: 14px;
+      margin-left: 100px;
+    }
+
+    .profile__Information {
+      display: flex;
+      justify-content: center;
+    }
+    &__BirthdayImg {
+      margin-left: 30px;
+    }
+    &__birthday {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+
+    &__School {
+      font-size: 12px;
+      text-align: right;
+      margin-right: 50px;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .profile__item {
+        margin: 8px;
+        height: 30px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: $mainColor;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+
+    &__comment {
+      padding: 39px 28px;
+
+      height: 140px;
+      width: 300px;
+      border-radius: 10px;
+      background-color: #f2eded;
+      margin: 16px auto;
+      p {
+        font-size: 14px;
+        color: $textColor;
+      }
+    }
+
+    .Wrap__Button {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin: 0 auto;
+        height: 30px;
+        width: 120px;
+        border-radius: 20px;
+        background-color: #fff;
+        color: $accentColor;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+}
+
+.profile__Button {
+  display: flex;
+  justify-content: center;
+  margin: 58px;
+  button {
+    height: 55px;
+    width: 320px;
+    border-radius: 28px;
+    background-color: $accentColor;
+    color: #fff;
+  }
+}
