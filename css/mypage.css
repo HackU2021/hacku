@@ -423,6 +423,10 @@ body {
   display: flex;
   align-items: flex-end;
   padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 .header__wrap {
