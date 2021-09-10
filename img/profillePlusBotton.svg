@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="グループ_12" data-name="グループ 12" transform="translate(-242 -254)">
+    <g id="楕円形_2" data-name="楕円形 2" transform="translate(242 254)" fill="#ffd136" stroke="#fceab2" stroke-width="3">
+      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+      <circle cx="20.5" cy="20.5" r="19" fill="none"/>
+    </g>
+    <g id="Icon_feather-plus" data-name="Icon feather-plus" transform="translate(245.5 257.5)">
+      <path id="パス_1" data-name="パス 1" d="M18,7.5v20" transform="translate(-0.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="パス_2" data-name="パス 2" d="M7.5,18h20" transform="translate(0 -0.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
