@@ -8,7 +8,6 @@
    # Global selectors
    # ================================================================= */
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-y: scroll;
   /* All browsers without overlaying scrollbars */
@@ -19,7 +18,6 @@ html {
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -379,54 +377,173 @@ html {
 }
 
 body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
-    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .nav {
   width: 100vw;
+  height: 85px;
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1000;
-  border-top: solid 1px #efefef;
+  border-top: solid 1px #EFEFEF;
+  background-color: #fff;
 }
 
 .nav__wrap {
   width: 80vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   margin: 10px auto 40px;
 }
 
 .nav__wrap__list__link {
   width: 20vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  color: #c3baba;
+  color: #C3BABA;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .nav__wrap__list__link__img {
   margin-bottom: 3px;
 }
-/*# sourceMappingURL=message.css.map */
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.header__wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrap__link {
+  margin-left: 25px;
+}
+
+.header__wrap__link__icon {
+  color: #55626F;
+  font-size: 1.6rem;
+}
+
+.header__wrap__heading {
+  width: 83%;
+  color: #556270;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.student-list {
+  width: 100vw;
+  padding: 65px 0 100px;
+  background-color: #4ecdc4;
+  margin-top: 100px;
+}
+
+.student-list__select {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 48px;
+}
+
+.student-list__select__link {
+  color: #556270;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 20px;
+  box-shadow: 0px 1px 5px #00000029;
+}
+
+.student-list__wrap {
+  width: 95vw;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px 36px;
+  margin-bottom: 32px;
+}
+
+.student-list__wrap__profile {
+  display: flex;
+}
+
+.student-list__wrap__profile__img {
+  margin-right: 26px;
+}
+
+.student-list__wrap__profile__content__name {
+  color: #556270;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.student-list__wrap__profile__content__school-name {
+  color: #556270;
+  font-size: 1.2rem;
+  padding: 8px 0 14px;
+  line-height: 20px;
+}
+
+.student-list__wrap__profile__content__tag {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-list__wrap__profile__content__tag__content {
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #4ECDC4;
+  border-radius: 50px;
+  padding: 4px 6px;
+  margin: 0 8px 8px 0;
+}
+
+.student-list__wrap__link-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px 0;
+}
+
+.student-list__wrap__link-area__prof-link, .student-list__wrap__link-area__send-link {
+  width: 140px;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #556270;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 1px 5px #00000029;
+}
+
+.student-list__wrap__link-area__send-link {
+  background-color: #FFD136;
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+  background-color: #FFD136;
+}

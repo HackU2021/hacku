@@ -8,7 +8,6 @@
    # Global selectors
    # ================================================================= */
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-y: scroll;
   /* All browsers without overlaying scrollbars */
@@ -19,7 +18,6 @@ html {
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -379,54 +377,150 @@ html {
 }
 
 body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
-    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .nav {
   width: 100vw;
+  height: 85px;
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1000;
-  border-top: solid 1px #efefef;
+  border-top: solid 1px #EFEFEF;
+  background-color: #fff;
 }
 
 .nav__wrap {
   width: 80vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   margin: 10px auto 40px;
 }
 
 .nav__wrap__list__link {
   width: 20vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  color: #c3baba;
+  color: #C3BABA;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .nav__wrap__list__link__img {
   margin-bottom: 3px;
 }
-/*# sourceMappingURL=message.css.map */
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.header__wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrap__link {
+  margin-left: 25px;
+}
+
+.header__wrap__link__icon {
+  color: #55626F;
+  font-size: 1.6rem;
+}
+
+.header__wrap__heading {
+  width: 83%;
+  color: #556270;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.exchange {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 65px;
+  background-color: #4ecdc4;
+  margin-top: 100px;
+}
+
+.exchange__wrap {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.exchange__wrap__notification {
+  color: #556270;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.exchange__wrap__profile-img {
+  margin: 24px 0;
+}
+
+.exchange__wrap__name {
+  color: #556270;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.exchange__wrap__school-name {
+  color: #556270;
+  font-size: 1.4rem;
+  margin: 16px 0;
+}
+
+.exchange__wrap__tag {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.exchange__wrap__tag__content {
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #4ECDC4;
+  border-radius: 50px;
+  padding: 4px 6px;
+  margin: 0 0 8px 8px;
+}
+
+.exchange__wrap__message {
+  width: 70vw;
+  color: #556270;
+  font-size: 1.4rem;
+  text-align: left;
+  margin: 40px auto 16px;
+}
+
+.exchange__wrap__sns {
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 46px;
+}

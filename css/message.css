@@ -382,19 +382,21 @@ body {
 
 .nav {
   width: 100vw;
+  height: 85px;
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1000;
   border-top: solid 1px #EFEFEF;
+  background-color: #fff;
 }
 
 .nav__wrap {
   width: 80vw;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   margin: 10px auto 40px;
 }
@@ -408,9 +410,84 @@ body {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .nav__wrap__list__link__img {
   margin-bottom: 3px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.header__wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrap__link {
+  margin-left: 25px;
+}
+
+.header__wrap__link__icon {
+  color: #55626F;
+  font-size: 1.6rem;
+}
+
+.header__wrap__heading {
+  width: 83%;
+  color: #556270;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answer {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 65px;
+  background-color: #4ecdc4;
+  margin-top: 100px;
+}
+
+.answer__wrap {
+  width: 90vw;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 10px 35px 24px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.answer__wrap__message-area {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: solid 1px #f2eded;
+  text-decoration: none;
+}
+
+.answer__wrap__message-area__human-img {
+  margin-right: 24px;
+}
+
+.answer__wrap__message-area__icon {
+  margin-right: 16px;
+}
+
+.answer__wrap__message-area__notification {
+  color: #556270;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 24px;
 }

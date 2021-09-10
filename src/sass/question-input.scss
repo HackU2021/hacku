@@ -1,0 +1,65 @@
+@import 'ress', 'common', 'var', 'nav', 'header';
+.input{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 65px;
+    background-color: $backgroundColor;
+    margin-top: 100px;
+    &__wrap{
+        width: 90vw;
+        height: 520px;
+        margin: 0 auto;
+        padding-top: 24px;
+        background-color: #fff;
+        border-radius: 10px;
+        &__profile{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+        }
+        &__question-heading{
+            color: $textColor;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        &__question{
+            width: 80vw;
+            margin: 0 auto;
+            &__area{
+                display: flex;
+                margin-bottom: 20px;
+                &__number{
+                    color: $textColor;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    margin-right: 15px;
+                }
+                &__content{
+                    &__text{
+                        width: 270px;
+                        height: 80px;
+                        padding: 8px 0 0 17px;
+                        background-color: #F2EDED;
+                        color: $textColor;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    &__submit{
+        display: block;
+        width: 320px;
+        line-height: 55px;
+        background-color: #FFD136;
+        border-radius: 28px;
+        margin: 45px auto 0;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,86 @@
+@import 'ress', 'common', 'var', 'nav', 'header';
+.student-list{
+    width: 100vw;
+    padding: 65px 0 100px;
+    background-color: $backgroundColor;
+    margin-top: 100px;
+    &__select{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto 48px;
+        &__link{
+            color: $textColor;
+            font-size: 1.2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 8px 20px;
+            box-shadow: 0px 1px 5px #00000029;
+        }
+    }
+    &__wrap{
+        width: 95vw;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 16px 36px;
+        margin-bottom: 32px;
+        &__profile{
+            display: flex;
+            &__img{
+                margin-right: 26px;
+            }
+            &__content{
+                &__name{
+                    color: $textColor;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+                &__school-name{
+                    color: $textColor;
+                    font-size: 1.2rem;
+                    padding: 8px 0 14px;
+                    line-height: 20px;
+                }
+                &__tag{
+                    display: flex;
+                    flex-wrap: wrap;
+                    &__content{
+                        color: #fff;
+                        font-size: 1.2rem;
+                        background-color: #4ECDC4;
+                        border-radius: 50px;
+                        padding: 4px 6px;
+                        margin: 0 8px 8px 0;
+                    }
+                }
+            }
+        }
+        &__link-area{
+            display: flex;
+            justify-content: space-around;
+            margin: 24px 0;
+            &__prof-link{
+                width: 140px;
+                line-height: 40px;
+                background-color: #fff;
+                border-radius: 10px;
+                color: $textColor;
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+                box-shadow: 0px 1px 5px #00000029;
+            }
+            &__send-link{
+                @extend .student-list__wrap__link-area__prof-link;
+                background-color: #FFD136;
+                color: #fff;
+            }
+        }
+    }
+}
+.active{
+    color: #fff;
+    background-color: #FFD136;
+}
