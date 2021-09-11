@@ -1,67 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-@import 'ress', 'common', 'var', 'nav', 'header';
-=======
-*{
-	margin:0;
-	padding:0;
-	font-size:100%;
-}
-
-body{
-  background: #4ECDC4;
-  font-family: "游ゴシック体", YuGothic;
-  transform: translateY(60%);
-}
-.rogo{
-  transform: translateY(-30%);
-}
-.rogo,.start{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.kiyaku{
-  p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    color: #fff;
-    margin-top: 220px;
-    margin-bottom: 20px;
-  
-  }
-}
-.btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  font-size: 16px;
-  margin: 0 auto;
-  text-decoration: none;
-  color: #fff;
-  background-color: #FFD136;
-  border-radius: 100vh;
-  box-shadow: 0 1px 7px rgb(0, 0, 0,.2)
-}
-.btn:hover{
-  color: #fff;
-  background: #f56500;
-}
->>>>>>> a4f6edb6295397feaa028a2e755c04948180c36c
-=======
-@import "ress", "common", "var", "nav", "header";
+@import "var";
+@import "ress";
 
 body {
   background-color: $mainColor;
-  display: flex;
-  height: 100vh;
 }
+
 .profile {
-  margin: auto;
+  margin-top: 35px;
 
   &__Box {
     height: 100%;
@@ -69,8 +14,15 @@ body {
     justify-content: center;
   }
 
+  p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   &__Wrap {
-    height: 501px;
+    height: 520px;
     width: 364px;
     background-color: #fff;
     border-radius: 10px;
@@ -129,7 +81,6 @@ body {
       margin: 16px auto;
       p {
         font-size: 14px;
-        text-align: left;
         color: $textColor;
       }
     }
@@ -150,4 +101,16 @@ body {
     }
   }
 }
->>>>>>> daa58f712bbc9cca3d1eb75914f7a02397fa5032
+
+.profile__Button {
+  display: flex;
+  justify-content: center;
+  margin: 58px;
+  button {
+    height: 55px;
+    width: 320px;
+    border-radius: 28px;
+    background-color: $accentColor;
+    color: #fff;
+  }
+}

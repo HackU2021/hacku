@@ -458,97 +458,79 @@ body {
   height: 100vh;
 }
 
-.profile {
-  margin: auto;
+body header {
+  z-index: 2;
 }
 
-.profile__Box {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap {
-  height: 501px;
-  width: 364px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.profile__Wrap__Img {
-  text-align: center;
-  margin-top: 24px;
-}
-
-.profile__Wrap__Name {
-  font-size: 14px;
-  margin-left: 100px;
-}
-
-.profile__Wrap .profile__Information {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap__BirthdayImg {
-  margin-left: 30px;
-}
-
-.profile__Wrap__birthday {
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.profile__Wrap__School {
-  font-size: 12px;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.profile__Wrap__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.profile__Wrap__items .profile__item {
-  margin: 8px;
-  height: 30px;
-  width: 80px;
-  border-radius: 20px;
-  background-color: #4ecdc4;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  line-height: 30px;
-}
-
-.profile__Wrap__comment {
-  padding: 39px 28px;
-  height: 140px;
-  width: 300px;
-  border-radius: 10px;
-  background-color: #f2eded;
-  margin: 16px auto;
-}
-
-.profile__Wrap__comment p {
-  font-size: 14px;
-  text-align: left;
-  color: #556270;
-}
-
-.profile__Wrap .Wrap__Button {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap .Wrap__Button button {
+body .search {
+  padding-top: 123px;
   margin: 0 auto;
-  height: 30px;
-  width: 120px;
+}
+
+body .search h2 {
+  margin-top: 48px;
+  margin-bottom: 17px;
+  color: #fff;
+}
+
+body .search .tag__inputText {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+body .search .tag__inputText input {
+  padding-left: 42px;
+  width: 300px;
+  height: 40px;
+  background-color: #f2eded;
+  border: none;
   border-radius: 20px;
+  font-size: 12px;
+}
+
+body .search .tag__inputText i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+body .search__list {
+  height: 736px;
+  width: 340px;
+  border-radius: 10px;
   background-color: #fff;
-  color: #ffd136;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+}
+
+body .search__list ul a {
+  text-decoration: none;
+  height: 56px;
+  display: flex;
+}
+
+body .search__list ul li {
+  list-style: none;
+  border-bottom: solid 1px #f2eded;
+}
+
+body .search__list ul li p {
+  width: 100%;
+  font-size: 12px;
+  color: #556270;
+  line-height: 56px;
+}
+
+body .search__list ul li i {
+  line-height: 56px;
+  color: #f2eded;
+  display: flex;
+  justify-content: flex-end;
 }

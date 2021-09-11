@@ -43,7 +43,7 @@ task('sass',(done)=>{
             compass : true
             }).on('error',sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(autoprefixer())//{browsers: ["last 3 versions", "ie >= 11", "Android >= 4","ios_saf >= 10"]}  ()内に入っていた物
+        .pipe(autoprefixer())
         .pipe(dest(cssDestPath));
     done();
     console.log("===== sass is true =====")
@@ -78,7 +78,7 @@ task('watch',(done)=>{
 //    watch(cssSrcPath+'/*.scss',task('sass'));
     watch(`${cssSrcPath}/*.scss`,task('sass'));
 //    watch(jsSrcPath+'/*.js',task('js'));
-    watch(`${jsSrcPath}/*.js`,task('js'));
+    // watch(`${jsSrcPath}/*.js`,task('js'));
 //    watch(pugSrcPath+'/*.pug',task('pug'));
     watch(`${pugSrcPath}/*.pug`,task('pug'));
     // watch(`${jsSrcPath}/*.js`,task('js'));

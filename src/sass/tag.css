@@ -8,7 +8,8 @@
    # Global selectors
    # ================================================================= */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: scroll;
   /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%;
@@ -18,7 +19,8 @@ html {
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 ::before,
@@ -372,183 +374,76 @@ video {
   text-shadow: none;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-.nav {
-  width: 100vw;
-  height: 85px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  border-top: solid 1px #EFEFEF;
-  background-color: #fff;
-}
-
-.nav__wrap {
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  list-style: none;
-  margin: 10px auto 40px;
-}
-
-.nav__wrap__list__link {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #C3BABA;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.nav__wrap__list__link__img {
-  margin-bottom: 3px;
-}
-
-.header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-}
-
-.header__wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.header__wrap__link {
-  margin-left: 25px;
-}
-
-.header__wrap__link__icon {
-  color: #55626F;
-  font-size: 1.6rem;
-}
-
-.header__wrap__heading {
-  width: 83%;
-  color: #556270;
-  font-size: 1.6rem;
-  font-weight: bold;
+.tag__search p {
   text-align: center;
+  font-size: 16px;
 }
 
-body {
-  background-color: #4ecdc4;
-  display: flex;
-  height: 100vh;
-}
-
-.profile {
-  margin: auto;
-}
-
-.profile__Box {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap {
-  height: 501px;
-  width: 364px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.profile__Wrap__Img {
-  text-align: center;
-  margin-top: 24px;
-}
-
-.profile__Wrap__Name {
-  font-size: 14px;
-  margin-left: 100px;
-}
-
-.profile__Wrap .profile__Information {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap__BirthdayImg {
-  margin-left: 30px;
-}
-
-.profile__Wrap__birthday {
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.profile__Wrap__School {
-  font-size: 12px;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.profile__Wrap__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.profile__Wrap__items .profile__item {
-  margin: 8px;
-  height: 30px;
-  width: 80px;
-  border-radius: 20px;
-  background-color: #4ecdc4;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  line-height: 30px;
-}
-
-.profile__Wrap__comment {
-  padding: 39px 28px;
-  height: 140px;
-  width: 300px;
-  border-radius: 10px;
-  background-color: #f2eded;
-  margin: 16px auto;
-}
-
-.profile__Wrap__comment p {
-  font-size: 14px;
-  text-align: left;
-  color: #556270;
-}
-
-.profile__Wrap .Wrap__Button {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap .Wrap__Button button {
+.tag__inputText {
+  position: relative;
   margin: 0 auto;
-  height: 30px;
-  width: 120px;
-  border-radius: 20px;
-  background-color: #fff;
-  color: #ffd136;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
+
+.tag__inputText input {
+  padding-left: 30px;
+  width: 300px;
+  height: 40px;
+  background-color: #f2eded;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tag__inputText i {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.tag__genre__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tag__genre__item {
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #f2eded;
+  font-size: 12px;
+  margin: 8px;
+}
+
+.tag__genre__item--selected {
+  background-color: #4ecdc4;
+}
+
+.tag__genre__See {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tag__genre__See p {
+  text-align: center;
+}
+
+.tag__genre__See i {
+  color: #4ecdc4;
+  border: solid red;
+  height: 10px;
+}
+/*# sourceMappingURL=tag.css.map */

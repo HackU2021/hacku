@@ -372,94 +372,12 @@ video {
   text-shadow: none;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-.nav {
-  width: 100vw;
-  height: 85px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  border-top: solid 1px #EFEFEF;
-  background-color: #fff;
-}
-
-.nav__wrap {
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  list-style: none;
-  margin: 10px auto 40px;
-}
-
-.nav__wrap__list__link {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #C3BABA;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.nav__wrap__list__link__img {
-  margin-bottom: 3px;
-}
-
-.header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-}
-
-.header__wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.header__wrap__link {
-  margin-left: 25px;
-}
-
-.header__wrap__link__icon {
-  color: #55626F;
-  font-size: 1.6rem;
-}
-
-.header__wrap__heading {
-  width: 83%;
-  color: #556270;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 body {
   background-color: #4ecdc4;
-  display: flex;
-  height: 100vh;
 }
 
 .profile {
-  margin: auto;
+  margin-top: 35px;
 }
 
 .profile__Box {
@@ -468,8 +386,15 @@ body {
   justify-content: center;
 }
 
+.profile p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .profile__Wrap {
-  height: 501px;
+  height: 520px;
   width: 364px;
   background-color: #fff;
   border-radius: 10px;
@@ -534,7 +459,6 @@ body {
 
 .profile__Wrap__comment p {
   font-size: 14px;
-  text-align: left;
   color: #556270;
 }
 
@@ -551,4 +475,20 @@ body {
   background-color: #fff;
   color: #ffd136;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+}
+
+.profile__Button {
+  display: flex;
+  justify-content: center;
+  margin: 58px;
+}
+
+.profile__Button a {
+  line-height: 55px;
+  width: 320px;
+  border-radius: 28px;
+  background-color: #ffd136;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
 }

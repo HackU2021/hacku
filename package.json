@@ -1,14 +1,27 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "hacku",
+=======
+  "name": "umbrella",
+>>>>>>> daa58f712bbc9cca3d1eb75914f7a02397fa5032
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HackU2021/hacku.git"
@@ -44,4 +57,8 @@
   "keywords": [],
   "description": ""
 >>>>>>> a4f6edb6295397feaa028a2e755c04948180c36c
+=======
+  "author": "ryo",
+  "license": "ISC"
+>>>>>>> daa58f712bbc9cca3d1eb75914f7a02397fa5032
 }

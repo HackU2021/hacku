@@ -454,101 +454,44 @@ body {
 
 body {
   background-color: #4ecdc4;
-  display: flex;
-  height: 100vh;
 }
 
-.profile {
-  margin: auto;
+.startUp {
+  height: 80vh;
 }
 
-.profile__Box {
+.startUp__Wrap {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.profile__Wrap {
-  height: 501px;
-  width: 364px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.profile__Wrap__Img {
+.startUp__Terms {
   text-align: center;
-  margin-top: 24px;
+  margin-bottom: 15px;
 }
 
-.profile__Wrap__Name {
+.startUp__Terms p {
   font-size: 14px;
-  margin-left: 100px;
-}
-
-.profile__Wrap .profile__Information {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap__BirthdayImg {
-  margin-left: 30px;
-}
-
-.profile__Wrap__birthday {
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.profile__Wrap__School {
-  font-size: 12px;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.profile__Wrap__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.profile__Wrap__items .profile__item {
-  margin: 8px;
-  height: 30px;
-  width: 80px;
-  border-radius: 20px;
-  background-color: #4ecdc4;
   color: #fff;
-  font-size: 12px;
+}
+
+.startUp__Terms p a {
+  color: #fff;
+  list-style: none;
+  border-bottom: #fff;
+}
+
+.startUp__Btn {
   text-align: center;
-  line-height: 30px;
 }
 
-.profile__Wrap__comment {
-  padding: 39px 28px;
-  height: 140px;
-  width: 300px;
-  border-radius: 10px;
-  background-color: #f2eded;
-  margin: 16px auto;
-}
-
-.profile__Wrap__comment p {
-  font-size: 14px;
-  text-align: left;
-  color: #556270;
-}
-
-.profile__Wrap .Wrap__Button {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap .Wrap__Button button {
-  margin: 0 auto;
-  height: 30px;
-  width: 120px;
-  border-radius: 20px;
-  background-color: #fff;
-  color: #ffd136;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+.startUp__Btn button {
+  height: 55px;
+  width: 320px;
+  border-radius: 28px;
+  border: none;
+  background-color: #ffd136;
+  color: #fff;
 }

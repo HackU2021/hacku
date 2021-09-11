@@ -1,0 +1,41 @@
+@import "ress", "common", "var", "nav", "header";
+
+body {
+  background-color: $mainColor;
+}
+
+.startUp {
+  height: 80vh;
+  &__Wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__Terms {
+    text-align: center;
+    margin-bottom: 15px;
+    p {
+      font-size: 14px;
+      color: #fff;
+      a {
+        color: #fff;
+        list-style: none;
+        border-bottom: #fff;
+      }
+    }
+  }
+
+  &__Btn {
+    text-align: center;
+    button {
+      height: 55px;
+      width: 320px;
+      border-radius: 28px;
+      border: none;
+      background-color: $accentColor;
+      color: #fff;
+    }
+  }
+}

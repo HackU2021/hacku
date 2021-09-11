@@ -372,183 +372,45 @@ video {
   text-shadow: none;
 }
 
-html {
-  font-size: 62.5%;
+.comment {
+  text-align: center;
+  padding-top: 35px;
 }
 
-body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-.nav {
-  width: 100vw;
-  height: 85px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  border-top: solid 1px #EFEFEF;
-  background-color: #fff;
-}
-
-.nav__wrap {
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  list-style: none;
-  margin: 10px auto 40px;
-}
-
-.nav__wrap__list__link {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #C3BABA;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.nav__wrap__list__link__img {
-  margin-bottom: 3px;
-}
-
-.header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-}
-
-.header__wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.header__wrap__link {
-  margin-left: 25px;
-}
-
-.header__wrap__link__icon {
-  color: #55626F;
-  font-size: 1.6rem;
-}
-
-.header__wrap__heading {
-  width: 83%;
+.comment p {
+  text-align: center;
+  font-size: 16px;
   color: #556270;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
-body {
-  background-color: #4ecdc4;
-  display: flex;
-  height: 100vh;
-}
-
-.profile {
-  margin: auto;
-}
-
-.profile__Box {
-  height: 100%;
+.comment .textWrap {
   display: flex;
   justify-content: center;
 }
 
-.profile__Wrap {
-  height: 501px;
-  width: 364px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.profile__Wrap__Img {
-  text-align: center;
-  margin-top: 24px;
-}
-
-.profile__Wrap__Name {
-  font-size: 14px;
-  margin-left: 100px;
-}
-
-.profile__Wrap .profile__Information {
-  display: flex;
-  justify-content: center;
-}
-
-.profile__Wrap__BirthdayImg {
-  margin-left: 30px;
-}
-
-.profile__Wrap__birthday {
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.profile__Wrap__School {
-  font-size: 12px;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.profile__Wrap__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.profile__Wrap__items .profile__item {
-  margin: 8px;
-  height: 30px;
-  width: 80px;
-  border-radius: 20px;
-  background-color: #4ecdc4;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  line-height: 30px;
-}
-
-.profile__Wrap__comment {
-  padding: 39px 28px;
-  height: 140px;
+.comment .text {
+  height: 230px;
   width: 300px;
+  background-color: tomato;
   border-radius: 10px;
-  background-color: #f2eded;
-  margin: 16px auto;
 }
 
-.profile__Wrap__comment p {
-  font-size: 14px;
-  text-align: left;
+.comment a {
+  display: block;
   color: #556270;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 40px;
 }
 
-.profile__Wrap .Wrap__Button {
-  display: flex;
-  justify-content: center;
+.comment .linkBtn {
+  line-height: 55px;
+  width: 320px;
+  border-radius: 28px;
+  background-color: #ffd136;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.profile__Wrap .Wrap__Button button {
-  margin: 0 auto;
-  height: 30px;
-  width: 120px;
-  border-radius: 20px;
-  background-color: #fff;
-  color: #ffd136;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
-}

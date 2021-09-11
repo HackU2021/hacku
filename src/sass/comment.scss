@@ -1,0 +1,42 @@
+@import "var";
+@import "ress";
+
+.comment {
+  text-align: center;
+  padding-top: 35px;
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: $textColor;
+    margin-bottom: 40px;
+  }
+
+  .textWrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text {
+    height: 230px;
+    width: 300px;
+    background-color: tomato;
+    border-radius: 10px;
+  }
+
+  a {
+    display: block;
+    color: $textColor;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 40px;
+  }
+
+  .linkBtn {
+    height: 55px;
+    width: 320px;
+    border-radius: 28px;
+    background-color: $accentColor;
+    font-size: 16px;
+    color: #fff;
+  }
+}
