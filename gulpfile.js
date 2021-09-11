@@ -6,6 +6,8 @@
 --------------------------------------------------*/
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
@@ -44,6 +46,7 @@ task('sass',(done)=>{
         .pipe(autoprefixer())//{browsers: ["last 3 versions", "ie >= 11", "Android >= 4","ios_saf >= 10"]}  ()内に入っていた物
         .pipe(dest(cssDestPath));
     done();
+    console.log("===== sass is true =====")
     
 });
 
@@ -78,6 +81,9 @@ task('watch',(done)=>{
     watch(`${jsSrcPath}/*.js`,task('js'));
 //    watch(pugSrcPath+'/*.pug',task('pug'));
     watch(`${pugSrcPath}/*.pug`,task('pug'));
+    // watch(`${jsSrcPath}/*.js`,task('js'));
+//    watch(pugSrcPath+'/*.pug',task('pug'));
+    // watch(`${pugSrcPath}/*.pug`,task('pug'));
    done();
 });
 

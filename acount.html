@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/acount.css">
+</head>
+<body>
+    <div class="head">
+    <p class="pro">プロフィールを登録して下さい</p>
+    <label class="userIcon" for="file">
+        <img src="./img/profile.svg" id="userImg" alt="プロフィール画像">
+        <img src="./img/profillePlusBotton.svg" alt="" class="userBotton">
+    </label>
+    <input style="display: none;" accept="image/*" id="file" type="file">
+    <p class="proup">画像をアップロードして下さい。</p>
+    </div>
+
+    <div class="zenbu">
+    <label class="name">
+        <p>なまえ</p><input type="text" name="氏名" placeholder="入力してください。" class="about">
+    </label>
+
+    <div class="allday">
+        <p class="alldayBold">生年月日</p><input type="text" class="year"><p class="year1">年</p><input type="text" class="month"><p class="month1">月</p><input type="text" class="day"><p class="day1">日</p>
+    </div>
+
+    <label class="school">
+        <p>学校名</p><input type="text" placeholder="入力してください。" class="about">
+    </label>
+
+    <label class="ungrade">
+        <p>学部名</p><input type="text" placeholder="入力してください。" class="about">
+    </label>
+    <p class="se">性別</p>
+    <div class="uni">
+        <label class="uni1"><input type="radio" name="性別" value="男" class="uni11"> <p>男性</p></label>
+        <label class="uni2"><input type="radio" name="性別" value="女" class="uni22"> <p>女性</p></label>
+    </div>
+
+    <p class="grade1">学年</p>
+    </div>
+    <div class="grade">
+        <a href="" class="btn"><p>1年生</p></a>
+        <a href="" class="btn"><p>2年生</p></a>
+        <a href="" class="btn"><p>3年生</p></a>
+        <a href="" class="btn"><p>4年生or大学院生</p></a>
+    </div>
+    
+    <div class="next">
+        <a href="" class="btn2">つぎへ</a>
+    </div>
+    <script type="text/javascript" src="acount.js"></script>
+</body>
+</html>
